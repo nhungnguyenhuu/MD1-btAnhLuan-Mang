@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timShort(arr) {
+        let short = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].length <= arr[0].length) {
+                short = arr[i];
+            }
+        }
+        return short;
+    }
+
+    let arr = ["hoa", "hong", "phong", "hh"];
+    console.log(timShort(arr));
+
+
+</script>
+</body>
+</html>
